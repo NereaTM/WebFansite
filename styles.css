@@ -1,0 +1,445 @@
+/* PAGINA GENERAL */
+body {
+    padding: 20px;
+    margin: 0;
+    background-image: url('FOTOS/Fondo\ BTSgimp.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: 50px;  
+    margin-right: 20px; 
+   	line-height: 1.5em;
+    padding-top: 160px; 
+    
+}
+
+*{
+    cursor: url(CURSORES/gencursor.png), auto;
+}
+
+::selection {
+    background: 
+    #bd9afd;
+    color: #212121;
+    text-shadow: none;
+}
+  
+/* TITULOS */ 
+.titulos {
+    text-align: center; 
+    font-family: "Luckiest Guy", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #e8bcf3; 
+    max-width: 900px; 
+}
+
+
+/* TEXTO GENERICO */
+.texto {
+    color: #fdfdfd; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    margin-bottom: 60px;
+    line-height: 1.6;
+    background-color: rgba(115, 114, 116, 0.041); 
+    text-align: justify;
+    max-width: 900px; 
+    margin: 0 auto; 
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: Light 300;
+    font-style: normal;
+}
+
+/* LOGO */
+.logo {
+    display: flex; 
+    align-items: center; 
+    
+}
+
+
+.logo img {
+    height: 70px; 
+    width: auto;
+    margin-right: 10px;     
+}
+
+/* ENCABEZADO */
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0px 20px; 
+    background-image: url('FOTOS/Concierto.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+    
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+}
+
+nav ul li {
+    margin-top: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: url(CURSORES/clikcursor.png), auto;
+}
+
+nav ul li a:hover {
+    background-color: #f1d6f5;
+    color: #6a1b9a;
+    border-color: #f1d6f5;
+}
+
+.links-web {
+    color: #e8bcf3;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: url(CURSORES/clikcursor.png), pointer;
+}
+
+a.links-web i.fa-spotify {
+    cursor: url('CURSORES/clikcursor.png'), pointer;
+}
+
+/* FOTOS LARGO PAGINA */
+.fotos-generico {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*PIE DE PAGINA*/
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    display: flex;
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a:hover {
+    color: #653086; 
+}
+
+.footer-links a {
+    color: #e8bcf3;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: url(CURSORES/clikcursor.png), pointer
+}
+
+.footer-links li a i {
+    cursor: url(CURSORES/clikcursor.png), pointer;
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        height: auto; 
+        padding: 0px; 
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+    
+    main {
+        padding-top: 60px; 
+      }
+    nav {
+        float: right;
+    }
+  
+    nav ul {
+        flex-direction: column; 
+        gap: 5px; 
+        justify-content: right;
+    }
+
+    nav ul li {
+        margin-top: 5px; 
+    }
+
+    nav ul li a {
+        font-size: 16px; 
+        padding: 0px 16px; 
+        border: 2px solid rgba(0, 0, 0, 0);      
+    }
+
+    .footer-content {
+        padding: 0 20px;
+    }
+
+    .popup {
+        width: 50%; 
+    }
+
+    .carusel {
+        max-width: 60%;
+    }
+}
+
+
+/* MIEMBROS*/
+.lista-miembro {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; 
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.img-miembro li {
+    margin: 10px;
+}
+
+.img-miembro img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #f7d6ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: url(CURSORES/clikcursor.png), auto;
+}
+
+.img-miembro img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #292828;
+    color: #efd4ff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    display: none; /* Para que este oculto por defecto*/
+    box-shadow: 0 5px 15px rgba(218, 192, 241, 0.404);
+    z-index: 1000; /* Sobreposición popup */
+}
+
+.popup img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contenido-popup {
+    position: relative;
+    text-align: center;
+    cursor: url(CURSORES/clikcursor.png), auto
+}
+
+/* X */
+.cerrar-popup {
+    position: absolute;
+    bottom: 0px; 
+    right: 0px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2000;
+    cursor: url(CURSORES/clikcursor.png), auto;
+}
+
+.cerrar-popup:hover {
+    color: #f7d6ff; 
+}
+
+/* Mostrar el popup cuando el input está seleccionado */
+.miembro-input:checked + label + .popup {
+    display: block; 
+}
+
+/* La X se debe ver cuando el popup esté visible */
+.miembro-input:checked + label + .popup .close-popup {
+    display: block; 
+}
+
+/* Estilo para el enlace que envuelve la X */
+.cerrar-popup-link {
+    text-decoration: none; 
+}
+
+/* Mostrar el overlay y el popup */
+.miembro-input:checked ~ .popup-overlay {
+    display: block;
+}
+
+.miembro-input:checked ~ .popup {
+    display: block;
+}
+
+/* DISCOGRAFIA*/
+.carousel-inner {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    max-width: 800px; /* Ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel */ 
+}
+
+.carousel-control {
+    cursor: url('CURSORES/clikcursor.png'), auto !important; /* para sobreescribir relgas */ 
+}
+
+.formulario-contacto {
+    background-color: #f1d6f5;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto Slab", serif;
+}
+
+.formulario-contacto h2 {
+    font-family: "Luckiest Guy", serif;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.formulario-contacto p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario-contacto input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto .boton-enviar {
+    background-color: #6b0c91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* TABLA*/
+table {
+    width: 70%;
+    border-collapse: collapse;
+    table-layout: center; 
+    margin-left: auto;
+    margin-right: auto
+    
+}
+
+tr{
+    padding: 12px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
+
+th {
+    background-color: #6a2c8b4f;
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
+
+td {
+    background-color: #b27dd848;
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
+
+table, th, td {
+    border: white;
+}
+
+
+  
